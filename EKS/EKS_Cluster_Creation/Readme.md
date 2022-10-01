@@ -3,8 +3,8 @@
 
 ## Create an EKS cluster with 2 nodes & instance type - t2.micro
     eksctl create cluster \
-    --name my-cluster \
-    --region eu-central-1 \
+    --name my-cluster1 \
+    --region us-west-2 \
     --nodegroup-name my-nodes \
     --node-type t2.micro \
     --nodes 2
@@ -13,7 +13,7 @@
     'kubectl get nodes' 
     
 ## Check Default pods
-    'kubectl get pods -n kube-system' or 'kubectl get po'
+    'kubectl get pods -n kube-system'
     
 ## Run a httpd service in pod
      'kubectl run <name_for_pod> <image_name>
